@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kerja Kelompok - Seni Tari</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f9f7f7, #fde2e4);
+      overflow: hidden;
+    }
+
+    .slide {
+      display: none;
+      height: 100vh;
+      width: 100vw;
+      padding: 60px;
+      box-sizing: border-box;
+      animation: fadeInRight 1s ease;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 20px;
+      margin: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    @keyframes fadeInRight {
+      from { opacity: 0; transform: translateX(50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    .title {
+      font-size: 3em;
+      font-weight: 700;
+      color: #6a0572;
+    }
+
+    .content {
+      font-size: 1.4em;
+      margin-top: 25px;
+      color: #2d2d2d;
+    }
+
+    .navigation {
+      position: absolute;
+      bottom: 30px;
+      width: 100%;
+      text-align: center;
+    }
+
+    button {
+      font-size: 1.2em;
+      padding: 12px 28px;
+      margin: 0 10px;
+      border: none;
+      border-radius: 15px;
+      background: linear-gradient(to right, #6a0572, #ab83a1);
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(to right, #7b2cbf, #9d4edd);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Slides -->
+  <div class="slide active">
+    <div class="title">SENI TARI</div>
+    <div class="content">Kelompok 5<br>Anggota: Zikri, Della, Teysa, Dwi, Megamian</div>
+  </div>
+
+  <div class="slide">
+    <div class="title">Apa Itu Seni Tari?</div>
+    <div class="content">Seni tari adalah bentuk seni pertunjukan yang menggunakan gerakan tubuh secara berirama untuk mengekspresikan perasaan, maksud, atau pikiran. Gerakan-gerakan ini biasanya dilakukan di tempat dan waktu tertentu, seringkali diiringi musik, dan dapat melibatkan ekspresi individu maupun kelompok.</div>
+  </div>
+
+  <div class="slide">
+    <div class="title">Sejarah Perkembangan</div>
+    <div class="content">
+      Perkembangan seni tari di Indonesia dimulai dari masa prasejarah hingga saat ini, mengalami berbagai perubahan dan pengaruh budaya. Awalnya, tari digunakan sebagai sarana upacara dan syukur kepada alam. Kemudian, di masa Hindu-Buddha, tari dipengaruhi oleh kebudayaan India, lalu berkembang lagi pada masa Islam dengan perpaduan budaya. Masa penjajahan membawa kemunduran, namun seni tari kembali bangkit setelah kemerdekaan dengan berbagai jenis tari tradisional dan modern.
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="title">Klasifikasi Seni Tari</div>
+    <div class="content">
+      • Tari Tradisional<br>
+      • Tari Klasik<br>
+      • Tari Rakyat<br>
+      • Tari Kreasi Baru<br>
+      • Tari Kontemporer
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="title">Fungsi Tari</div>
+    <div class="content">
+      • Sarana hiburan<br>
+      • Media upacara adat<br>
+      • Pendidikan dan komunikasi<br>
+      • Penguatan identitas budaya
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="title">Tari Kontemporer</div>
+    <div class="content">
+      Tari kontemporer bebas dan kreatif, sering menyuarakan kritik sosial. Banyak digunakan di panggung modern oleh generasi muda.
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="title">Perkembangan Tari Saat Ini</div>
+    <div class="content">
+      Tari dipopulerkan melalui media sosial, YouTube, festival seni, dan kolaborasi internasional. Kreativitas terus berkembang tanpa batas.
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="title">Contoh Tari Tradisional</div>
+    <div class="content">
+      • Tari Saman (Aceh)<br>
+      • Tari Piring (Sumbar)<br>
+      • Tari Kecak (Bali)<br>
+      • Tari Jaipong (Jawa Barat)
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="title">Pelestarian Seni Tari</div>
+    <div class="content">
+      Melestarikan tari berarti menjaga budaya. Dengan belajar, mengajarkan, dan menampilkan tari, kita menjaga identitas bangsa.
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="title">Kesimpulan</div>
+    <div class="content">
+      Tari bukan hanya hiburan, tapi warisan budaya yang perlu kita lestarikan bersama dengan bangga.
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="title">Terima Kasih</div>
+    <div class="content">Ada pertanyaan? 😊</div>
+  </div>
+
+  <!-- Navigation Buttons -->
+  <div class="navigation">
+    <button onclick="prevSlide()">⬅ Sebelumnya</button>
+    <button onclick="nextSlide()">➡ Selanjutnya</button>
+  </div>
+
+  <script>
+    let current = 0;
+    const slides = document.querySelectorAll(".slide");
+
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove("active"));
+      slides[index].classList.add("active");
+    }
+
+    function nextSlide() {
+      if (current < slides.length - 1) {
+        current++;
+        showSlide(current);
+      }
+    }
+
+    function prevSlide() {
+      if (current > 0) {
+        current--;
+        showSlide(current);
+      }
+    }
+  </script>
+</body>
+</html>
